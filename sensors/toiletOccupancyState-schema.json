@@ -1,0 +1,30 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"description": "Toilet occupancy state of the given toilet.",
+	"required": [
+		"$schema", 
+		"version",
+		"atDateTime",
+		"toiletState"
+	],
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "version of the related itxpt specification release for this service according to TBD.",
+			"minLength": 5,
+			"maxLength": 14,
+			"pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+		},
+		"atDateTime": {
+			 "type": "string",
+			 "description": "The time stamp of when this message was created. Time and date according the ISO8601 defined in TR-001",
+			 "format": "date-time"
+		},
+		"toiletOccupancyState": {
+			"type": "string",
+			"description": "Toilet occupancy state of the given toilet.",
+			"enum": ["vacant", "occupied", "outOfService"]
+		}
+	}
+}
