@@ -1,0 +1,29 @@
+{
+	"$schema": "http://json-schema.org/schema#",
+	"type": "object",
+	"description": "Emergency brake activated signal.",
+	"required": [
+		"$schema", 
+		"version",
+		"atDateTime",
+		"eBActivated"
+	],
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "Version of the related itxpt specification release for this service according to TBD.",
+			"minLength": 5,
+			"maxLength": 14,
+			"pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+		},
+		"atDateTime": {
+			"type": "string",
+			"description": "The time stamp of when this message was created. Time and date according the ISO8601 defined in TR-001.",
+			"format": "date-time"
+		},
+		"eBActivated": {
+			"description": "Defines if the Emergency Brake is activated or not.",
+			"type": "boolean"
+		}
+	}
+}
