@@ -32,20 +32,9 @@
                "pattern": "^[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}$"
             }
          }
-      },
-      "extensions": {
-		 "type": ["object", "array"],
-		 "required": [
-				"origin"
-			],
-			"properties": {
-				"origin": {
-					"type": "string",
-					"minLength": 3,
-					"maxLength": 16,
-					"pattern": "^[LRS]{1}-[a-zA-Z0-9]"
-				}
-			}
-	}
+	},
+	"extensions": [
+		{"$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json" }
+	]
    }
 }
