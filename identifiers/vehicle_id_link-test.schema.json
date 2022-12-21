@@ -1,6 +1,6 @@
 {
    "$schema": "https://json-schema.org/draft/2020-12/schema",
-   "$id": "https://github.com/ITxPT/schematest/blob/main/identifiers/vehicle_id_link-test.schema.json",
+   "$id": "https://github.com/ITxPT/schematest/blob/main/identifiers",
    "allOf": [{ "$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json" }],
    "properties": {
       "identifier": {
