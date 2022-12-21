@@ -3,7 +3,7 @@
    "$id": "https://github.com/ITxPT/schematest/blob/main/identifiers",
    "allOf": [{ "$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json" }],
    "properties": {
-      "identifier": {
+      "id": {
          "type": "object",
          "required": [
             "origin"
@@ -16,14 +16,6 @@
                "maxLength": 16,
                "pattern": "^[LRS]{1}-[a-zA-Z0-9]"
             },
-            "firstSeen": {
-               "type": "string",
-               "format": "date-time"
-            },
-            "lastSeen": {
-               "type": "string",
-               "format": "date-time"
-            },            
             "EUI64": {
                "description": "IEEE 64-bit Global Identifier (EUI-64)",
                "type": "string",
@@ -54,6 +46,6 @@
 					"pattern": "^[LRS]{1}-[a-zA-Z0-9]"
 				}
 			}
-		}
+	}
    }
 }
