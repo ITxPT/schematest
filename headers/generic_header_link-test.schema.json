@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json",
+	"$id": "https://github.com/ITxPT/schematest/blob/main/headers",
 	"title": "The generic header that all ITxPT schema's shall include",
 	"description": "ITxPT generic header with schema version and github pointer",
 	"type": "object",
