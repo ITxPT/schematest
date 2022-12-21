@@ -1,0 +1,18 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://github.com/ITxPT/schematest/blob/main/extensions",
+	"title": "The generic extension that all ITxPT schema's may include",
+	"description": "ITxPT generic extension schema and github pointer",
+		 "type": ["object", "array"],
+		 "required": [
+				"origin"
+			],
+			"properties": {
+				"origin": {
+					"type": "string",
+					"minLength": 3,
+					"maxLength": 16,
+					"pattern": "^[LRS]{1}-[a-zA-Z0-9]"
+				}
+			}
+}
