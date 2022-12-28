@@ -1,5 +1,5 @@
 {
-	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$schema": "https://json-schema.org/draft/2020-12/schema#",
 	"$id": "https://github.com/ITxPT/schematest/blob/main/extensions",
 	"title": "The generic extension that all ITxPT schema's may include",
 	"description": "ITxPT generic extension schema and github pointer",
