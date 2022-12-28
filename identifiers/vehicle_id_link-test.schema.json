@@ -1,5 +1,5 @@
 {
-   "$schema": "https://json-schema.org/draft/2020-12/schema",
+   "$schema": "https://json-schema.org/draft/2020-12/schema#",
    "$id": "https://github.com/ITxPT/schematest/blob/main/identifiers",
    "allOf": [{ "$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json" }],
    "properties": {
@@ -34,7 +34,7 @@
          }
 	},
 	"extensions": [
-		{"$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json" }
+		{"$ref": "https://github.com/ITxPT/schematest/blob/main/extensions/generic_extension.schema.json" }
 	]
    }
 }
