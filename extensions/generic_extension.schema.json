@@ -10,6 +10,7 @@
 			],
 			"properties": {
 				"origin": {
+					"description": "A ITxPT formatted local identifier of the origin of the extension",
 					"type": "string",
 					"minLength": 3,
 					"maxLength": 16,
