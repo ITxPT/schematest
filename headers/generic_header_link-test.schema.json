@@ -6,10 +6,17 @@
 	"type": "object",
 	"required": [
 		"$schema",
+		"$id",
 		"version",
 		"atDateTime"
 	],
 	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"$id":{
+			"type": "string"
+		},
 		"version": {
 			"description": "The ITxPT version number that the payload origins from",
 			"type": "string",
