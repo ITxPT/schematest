@@ -1,0 +1,32 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema#",
+	"$id": "https://github.com/ITxPT/schematest/blob/main",
+	"title": "The generic header that all ITxPT schema's shall include",
+	"description": "ITxPT generic header with schema version and github pointer",
+	"type": "object",
+	"required": [
+		"$schema",
+		"version",
+		"atDateTime"
+	],
+	"properties": {
+		"$schema": {
+			"type": "string"
+		},
+		"$id":{
+			"type": "string"
+		},
+		"version": {
+			"description": "The ITxPT version number that the payload origins from",
+			"type": "string",
+			"minLength": 5,
+			"maxLength": 14,
+			"pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+		},
+		"atDateTime": {
+			"description": "TR-001 formated timestamp of when payload was generated",
+			"type": "string",
+			"format": "date-time"
+		}
+	}
+}
