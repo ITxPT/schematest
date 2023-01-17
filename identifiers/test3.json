@@ -1,0 +1,16 @@
+{
+  "$id": "https://github.com/ITxPT/schematest/blob/main/identifiers/test3",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Must be a non-negative integer",
+  "$comment": "A JSON Schema that uses multiple external references",
+  "$defs": {
+    "header": {
+      "allOf": [
+        {
+          "$ref": "https://github.com/ITxPT/schematest/blob/main/headers/generic_header_link-test.schema.json"
+        }
+      ]
+    }
+  },
+  "$ref": "#/$defs/header"
+}
