@@ -3,17 +3,10 @@
 	"description": "ITxPT generic header with schema version and github pointer",
 	"type": "object",
 	"required": [
-		"$schema",
 		"version",
 		"atDateTime"
 	],
 	"properties": {
-		"$schema": {
-			"type": "string"
-		},
-		"$id":{
-			"type": "string"
-		},
 		"version": {
 			"description": "The ITxPT version number that the payload origins from",
 			"type": "string",
