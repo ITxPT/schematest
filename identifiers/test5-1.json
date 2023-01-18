@@ -1,0 +1,6 @@
+{
+  "$id": "https://example.org/schemas/mixins/integer",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Must be an integer",
+  "type": "integer"
+}
