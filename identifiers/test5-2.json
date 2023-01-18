@@ -1,5 +1,5 @@
 {
-  "$id": "https://github.com/ITxPT/schematest/blob/identifiers/test5-2",
+  "$id": "https://raw.githubusercontent.com/ITxPT/schematest/main/identifiers/test5-2",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Not allowed to be negative",
   "minimum": 0
