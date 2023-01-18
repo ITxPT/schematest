@@ -1,6 +1,6 @@
 {
-  "$id": "https://example.org/schemas/mixins/integer",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/ITxPT/schematest/blob/identifiers/test5-1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
   "description": "Must be an integer",
   "type": "integer"
 }
