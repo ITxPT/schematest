@@ -1,5 +1,5 @@
 {
-  "$id": "https://raw.githubusercontent.com/ITxPT/schematest/main/identifiers/test5",
+  "$id": "https://github.com/ITxPT/schematest/raw/main/identifiers/test5",
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "description": "Must be a non-negative integer",
   "$comment": "A JSON Schema that uses multiple external references",
@@ -7,10 +7,10 @@
     "nonNegativeInteger": {
       "allOf": [
         {
-          "$ref": "/ITxPT/schematest/main/identifiers/test5-1"
+          "$ref": "/ITxPT/schematest/raw/main/identifiers/test5-1"
         },
         {
-          "$ref": "/ITxPT/schematest/main/identifiers/test5-2"
+          "$ref": "/ITxPT/schematest/raw/main/identifiers/test5-2"
         }
       ]
     }
