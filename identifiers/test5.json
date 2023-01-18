@@ -7,7 +7,7 @@
     "nonNegativeInteger": {
       "allOf": [
         {
-          "$ref": "/ITxPT/schematest/blob/identifiers/test5-1"
+          "$ref": "https://github.com/ITxPT/schematest/blob/identifiers/test5-1"
         },
         {
           "$ref": "/ITxPT/schematest/blob/identifiers/test5-2"
