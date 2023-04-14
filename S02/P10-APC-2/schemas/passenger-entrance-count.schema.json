@@ -1,6 +1,6 @@
 {
     "$schema": "https://json-schema.org/draft/2020-12/schema",
-    "$id": "https://itxpt.org/schemas/S02P10/passenger-entrance-count.schema.json",
+    "$id": "https://raw.githubusercontent.com/ITxPT/schematest/main/S02/P10-APC-2/schemas/passenger-entrance-count.schema.json",
     "type": "object",
     "title": "ITxPT S02P10 APC-2 service - Passenger Entrance Count Schema Definition",
     "description": "ITxPT service interface for standardized interoperability in public transport - JSON schema",
