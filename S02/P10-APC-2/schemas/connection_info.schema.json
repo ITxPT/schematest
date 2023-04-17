@@ -1,0 +1,40 @@
+{
+	"$schema": "https://json-schema.org/draft/2020-12/schema",
+	"$id": "https://raw.githubusercontent.com/ITxPT/schematest/main/S02/P10-APC-2/schemas/connection_info.schema.json",
+	"type": "object",
+	"required": [
+		"version",
+		"atDateTime",
+		"providerList"
+	],
+	"properties": {
+		"version": {
+			"type": "string",
+			"description": "version of the related itxpt specification release for this service according to TBD",
+			"minLength": 5,
+			"maxLength": 14,
+			"pattern": "^(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)\\.(?:0|[1-9]\\d*)$"
+		},
+		"atDateTime": {
+			 "type": "string",
+			 "format": "date-time",
+			 "description": "The time stamp of when the “status” was validated, and this message was created.. Time and date according the ISO8601 defined in TR-001"
+		},
+		"providerList": {
+			"type": "array",
+			"items":{
+				"type": "object",
+				"required": [
+					"providerName"
+				],
+				"properties": {
+					"providerName": {
+						"type": "string",
+						"description": "List of reference to the provider(s) operating on the module.",
+						"pattern": "^[itxpt.]+([0-9a-z_-]{2,14})+[.]+([0-9a-zA-Z_-]{2,14})+[.]+([1-9][\\d*]{0,2})$"
+					}
+				}
+			}
+		}
+	}
+}
