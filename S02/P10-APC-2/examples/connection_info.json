@@ -1,0 +1,12 @@
+{
+	"version": "2.3.0",
+	"atDateTime": "2022-02-14T12:45:50Z",
+	"providerList": [
+		{
+			"providerName": "itxpt.gnsslocation.OtrumVCG.123"
+		},
+		{
+			"providerName": "itxpt.fmstoip.OtrumVCG.456"
+		}
+	]
+}
