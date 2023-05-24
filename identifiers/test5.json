@@ -1,6 +1,6 @@
 {
   "$id": "https://github.com/ITxPT/schematest/raw/main/identifiers/test5",
-  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$schema": "https://json-schema.org/draft/2020-12/schema#",
   "description": "Must be a non-negative integer",
   "$comment": "A JSON Schema that uses multiple external references",
   "$defs": {
