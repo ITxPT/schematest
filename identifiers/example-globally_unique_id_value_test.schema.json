@@ -1,6 +1,6 @@
 {
 	"$schema": "https://json-schema.org/draft/2020-12/schema",
-	"$id": "https://github.com/ITxPT/schematest/blob/main",
+	"$id": "https://raw.githubusercontent.com/ITxPT/schematest/main/identifiers/example-globally_unique_id_value_test.schema.json",
 	"title": "Global Unique Identifier",
 	"description": "ITxPT schema for Global Unique Identifier for any vehicle mode",
 	"type": "object",
