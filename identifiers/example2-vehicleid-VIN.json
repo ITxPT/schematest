@@ -1,0 +1,10 @@
+{
+	"$schema":"https://raw.githubusercontent.com/ITxPT/schematest/main/identifiers/example-globally_unique_id_value_test.schema.json",
+	"version": "2.3.0",
+	"atDateTime": "2022-02-14T12:45:50Z",
+	"origin": "L-Test01",
+	"identifier": {
+	    "idType": "VIN",
+	    "idValue": "1GNDT13X53K185279"
+	}
+}
