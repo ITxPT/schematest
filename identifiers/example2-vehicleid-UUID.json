@@ -1,0 +1,10 @@
+{
+	"$schema": "https://raw.githubusercontent.com/ITxPT/schematest/main/identifiers/example-globally_unique_id_value_test.schema.json",
+	"version": "2.3.0",
+	"atDateTime": "2022-02-14T12:45:50Z",
+	"origin": "L-Test02",
+	"identifier": {
+	    "idType": "UUID",
+	    "idValue": "5f340e0d-a2f6-4bfa-9fef-05cbd0fbe985"
+	}
+}
