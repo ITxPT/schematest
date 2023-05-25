@@ -4,16 +4,16 @@
 	"atDateTime": "2022-02-14T12:45:50Z",
 	"origin": "L-Test03",
 	"identifier": {
-	    "idType": "EUI64",
-	    "idValue": "00-00-7c-5c-f8-ef-d5-0a"
+		"idType": "EUI64",
+		"idValue": "00-00-7c-5c-f8-ef-d5-0a"
 	},
 	"extensions": {
-	    "origin":"L-af32",
-	    "data":"test1",
-	    "arr": ["bas","32","0x12ca"],
-	    "op": {
-	        "sync": "True",
-	        "frameType": "bin"
-	    }
+		"origin":"L-af32",
+		"data":"test1",
+		"arr": ["bas","32","0x12ca"],
+		"op": {
+			"sync": "True",
+			"frameType": "bin"
+		}
 	}
 }
