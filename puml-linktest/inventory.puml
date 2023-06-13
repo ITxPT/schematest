@@ -5,8 +5,8 @@ title Inventory
 'skinparam backgroundColor white
 ' ITxPT Inventory, verison 2.3.0
 ' Status: workdoc, version 0.1
-{
-{T
+'{
+'{T
 .
 
 ' inventory
@@ -34,6 +34,6 @@ title Inventory
 ++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
 
 
-}
-}
+'}
+'}
 @endsalt
