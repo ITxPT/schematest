@@ -14,16 +14,16 @@
 +++++ composition
 +++++ status | current status of technical vehicle login
 
-++++ driver | DRIVER LOGIN
+++++ user | USER LOGIN (driver or others)
 +++++ status | current status of driver login
 +++++ cmd | top level for driver login request/response messages
-++++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
+++++++ [provider name] | login/out requests, publish shall include response topic (aka mqttv5)
 +++++++ response | personal response to the requester
 
 ++++ assignment | DUTY LOGIN
 +++++ status | current status of assignment login
 +++++ cmd | top level for assignment login request/response messages
-++++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
+++++++ [provider name] | login/out requests, publish shall include response topic (aka mqttv5)
 +++++++ response | personal response to the requester
 
 ' Current Operations Topics
