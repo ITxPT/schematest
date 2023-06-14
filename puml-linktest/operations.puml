@@ -2,50 +2,50 @@
 
 ' Login and merged topics based or related to TOBS Onboard MQTT RM02v0.3.12_ITxPT
 ' Status: workdoc, version 0.1
-
-.
+' the first topic level (+) is assigned to the ITxPT root topic
+'.
 ' Operational Information Topics
-+ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
+++ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
 '+++ vehicle
 '++++ unique_identifier
 '++++ assigned_identifier
-++ **login** | LOGIN function
-+++ vehicle | VEHICLE LOGIN
-++++ composition
-++++ status | current status of technical vehicle login
++++ **login** | LOGIN function
+++++ vehicle | VEHICLE LOGIN
++++++ composition
++++++ status | current status of technical vehicle login
 
-+++ driver | DRIVER LOGIN
-++++ status | current status of driver login
-++++ cmd | top level for driver login request/response messages
-+++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
-++++++ response | personal response to the requester
+++++ driver | DRIVER LOGIN
++++++ status | current status of driver login
++++++ cmd | top level for driver login request/response messages
+++++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
++++++++ response | personal response to the requester
 
-+++ assignment | DUTY LOGIN
-++++ status | current status of assignment login
-++++ cmd | top level for assignment login request/response messages
-+++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
-++++++ response | personal response to the requester
+++++ assignment | DUTY LOGIN
++++++ status | current status of assignment login
++++++ cmd | top level for assignment login request/response messages
+++++++ [provider identifier] | login/out requests, publish shall include response topic (aka mqttv5)
++++++++ response | personal response to the requester
 
 ' Current Operations Topics
-++ current_block
-+++ state
-+++ included_vehicle_journeys
-++ <font color=green>current_vehicel_journey
-+++ state
++++ current_block
+++++ state
+++++ included_vehicle_journeys
++++ <font color=green>current_vehicel_journey
+++++ state
 ' new structure (AF)
 ' ++++ details
-+++ expected_call
-+++ final_call
-+++ link_progress
-+++ call_event
-+++ local_call_event
-+++ <font color=green>calls
-'+++++ <font color=green>[sequenceNumber]
+++++ expected_call
+++++ final_call
+++++ link_progress
+++++ call_event
+++++ local_call_event
+++++ <font color=green>calls
+'++++++ <font color=green>[sequenceNumber]
 
-++ next_vehicel_journey
-+++ state
-+++ <font color=green>calls
-'++++ [sequenceNumber]
++++ next_vehicel_journey
+++++ state
+++++ <font color=green>calls
+'+++++ [sequenceNumber]
 
 
 @endsalt
