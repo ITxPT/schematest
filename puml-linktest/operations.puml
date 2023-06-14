@@ -2,10 +2,8 @@
 
 ' Login and merged topics based or related to TOBS Onboard MQTT RM02v0.3.12_ITxPT
 ' Status: workdoc, version 0.1
-{
-{T
-'.
 
+'.
 ' Operational Information Topics
 + <font color=red>operations
 '+++ vehicle
@@ -50,6 +48,4 @@
 '++++ [sequenceNumber]
 
 
-}
-}
 @endsalt
