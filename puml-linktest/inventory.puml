@@ -1,5 +1,5 @@
 @startsalt (id=inventory)
-title Inventory
+'title Inventory
 
 'scale 2
 'skinparam backgroundColor white
