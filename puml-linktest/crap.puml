@@ -27,6 +27,7 @@ header more crap
 ++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
 ++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
 ++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
+caption my caption
 footer end crap
 }
 }
