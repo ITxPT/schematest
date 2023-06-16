@@ -1,10 +1,10 @@
 @startsalt (id=crap)
 'title test crap
-header only crap
+
 {
 {T
 ' test crap
-header more crap
+
 + crap | TOP LEVEL TOPIC FOR INVENTORY
 ++ **connections** | MQTT CONNECTION INVENTORY
 +++ [client_id] | MQTT CONNECTION CLIENT ID
@@ -28,7 +28,7 @@ header more crap
 ++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
 ++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
 caption my caption
-footer end crap
+
 }
 }
 @endsalt
