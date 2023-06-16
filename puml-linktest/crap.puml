@@ -4,7 +4,7 @@
 {
 {T
 ' test crap
-
+header extra crap
 ++ crap | TOP LEVEL TOPIC FOR INVENTORY
 +++ **connections** | MQTT CONNECTION INVENTORY
 ++++ [client_id] | MQTT CONNECTION CLIENT ID
@@ -27,7 +27,7 @@
 +++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
 +++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
 +++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
-caption my caption
+
 
 }
 }
