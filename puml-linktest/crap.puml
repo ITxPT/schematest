@@ -3,7 +3,7 @@
 {
 {T
 ' test crap
-++ crap | TOP LEVEL TOPIC FOR INVENTORY
++ crap | TOP LEVEL TOPIC FOR INVENTORY
 +++ **connections** | MQTT CONNECTION INVENTORY
 ++++ [client_id] | MQTT CONNECTION CLIENT ID
 +++++ info | CONNECTION INFORMATION | true | 0 | ?
