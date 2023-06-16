@@ -5,28 +5,28 @@
 {T
 ' test crap
 
-+ crap | TOP LEVEL TOPIC FOR INVENTORY
-++ **connections** | MQTT CONNECTION INVENTORY
-+++ [client_id] | MQTT CONNECTION CLIENT ID
-++++ info | CONNECTION INFORMATION | true | 0 | ?
-++++ status | CLIENT CONNECTION STATUS | true | 1 | ?
-++++ will | LAST WILL INFORMATION | true | 1 | ?
+++ crap | TOP LEVEL TOPIC FOR INVENTORY
++++ **connections** | MQTT CONNECTION INVENTORY
+++++ [client_id] | MQTT CONNECTION CLIENT ID
++++++ info | CONNECTION INFORMATION | true | 0 | ?
++++++ status | CLIENT CONNECTION STATUS | true | 1 | ?
++++++ will | LAST WILL INFORMATION | true | 1 | ?
 
-++ **providers** | PROVIDER INVENTORY
-+++ [provider_name] | PROVIDER NAME
-++++ info | PROVIDER INFORMATION | true | 0 | ?
-++++ xstatus | STATUS OF PROVIDED SERVICE | true | 0 | ?
-++++ xdecode | HOW TO DECODE SSTATUS | true | 0 | ?
-++++ heartbeat | APPLICATION HEARTBEAT
-+++++ relative | RELATIVE APPLICATION HEARTBEAT | true | 0 | ?
-+++++ absolute | ABSOLUTE APPLICATION HEARTBEAT | true | 0 | ?
++++ **providers** | PROVIDER INVENTORY
+++++ [provider_name] | PROVIDER NAME
++++++ info | PROVIDER INFORMATION | true | 0 | ?
++++++ xstatus | STATUS OF PROVIDED SERVICE | true | 0 | ?
++++++ xdecode | HOW TO DECODE SSTATUS | true | 0 | ?
++++++ heartbeat | APPLICATION HEARTBEAT
+++++++ relative | RELATIVE APPLICATION HEARTBEAT | true | 0 | ?
+++++++ absolute | ABSOLUTE APPLICATION HEARTBEAT | true | 0 | ?
 
-++ **module**
-+++ [mdns_name] | THE ANNOUNCED mDNS/DNS-SD NAME
-++++ info | JSON REPRESENTATION OF TxT KEYS | true | 0 | ?
-++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
-++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
-++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
++++ **module**
+++++ [mdns_name] | THE ANNOUNCED mDNS/DNS-SD NAME
++++++ info | JSON REPRESENTATION OF TxT KEYS | true | 0 | ?
++++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
++++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
++++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
 caption my caption
 
 }
