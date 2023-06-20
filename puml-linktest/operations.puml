@@ -35,6 +35,6 @@
 
 'logon
 'raw link from github
-'!include https://raw.githubusercontent.com/ITxPT/schematest/main/puml-linktest/logon_mqtt-topics.puml!logon
+!include https://raw.githubusercontent.com/ITxPT/schematest/main/puml-linktest/logon_mqtt-topics.puml!logon
 
 @endsalt
