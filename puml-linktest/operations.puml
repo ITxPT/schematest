@@ -4,19 +4,21 @@
 ' operations related topics
 ' Status: workdoc, version 0.1
 ' the first topic level (+) is assigned to the ITxPT root topic
-'.
+
 ' Operational Information Topics
+.
 ++ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
-}
-!include https://raw.githubusercontent.com/ITxPT/schematest/main/puml-linktest/logon_mqtt-topics.puml!logon
-{T
+
 ' Current Operations Topics
 +++ current_block
 ++++ state
 ++++ included_vehicle_journeys
+
+' current vehicle journey
 +++ <font color=green>current_vehicel_journey
 ++++ state
-' new structure (AF)
+
+' new structure (AF), removed deitails level
 ' ++++ details
 ++++ expected_call
 ++++ final_call
@@ -26,10 +28,12 @@
 ++++ <font color=green>calls
 '++++++ <font color=green>[sequenceNumber]
 
+' next vehicle journey
 +++ next_vehicel_journey
 ++++ state
 ++++ <font color=green>calls
 '+++++ [sequenceNumber]
+
 }
 }
 
