@@ -5,6 +5,8 @@
 ' the first topic level (+) is assigned to the ITxPT root topic
 ' the second topic level (++) that is the parent of logon is "operations"
 ' eg. the mounting point for this document is: [ITxPT root topic]/operations/..
+{
+{T
 '.
 +++ **logon** | LOGON / LOGOFF function
 ++++ vehicle | VEHICLE LOGON
@@ -22,6 +24,6 @@
 +++++ cmd | top level for assignment logon request/response messages
 ++++++ [provider name] | logon/off requests, publish shall include pointer to response topic (aka mqttv5)
 +++++++ response | personal response to the requester
-
-
+}
+}
 @endsalt
