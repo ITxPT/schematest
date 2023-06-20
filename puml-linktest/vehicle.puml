@@ -6,7 +6,7 @@
 '+**topic** | **payload** | **retain** | **QoS** | **msg exp**
 '+ **[itxpt_root_topic]**
 
-
+header vehicleMode=BUS
 ++ vehicle | VEHICLE INFORMATION
 ++++ **id** | VEHICLE GLOBALLY UNIQUE ID's
 +++++ [origin] | from where..
