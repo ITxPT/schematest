@@ -3,8 +3,8 @@
 ' Status: workdoc, version 0.3
 {
 {T
-'+**topic** | **payload** | **retain** | **QoS** | **msg exp**
-'+ **[itxpt_root_topic]**
++**topic** | **payload** | **retain** | **QoS** | **msg exp**
++ **[itxpt_root_topic]**
 
 header vehicleMode=BUS
 ++ vehicle | VEHICLE INFORMATION
