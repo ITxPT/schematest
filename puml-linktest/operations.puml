@@ -6,8 +6,8 @@
 ' the first topic level (+) is assigned to the ITxPT root topic
 
 ' Operational Information Topics
-.
-++ <font color=red>operations | <font color=black> TOP LEVEL FOR FUNCTION "OPERATIONS"
+
+++ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
 
 ' Current Operations Topics
 +++ current_block
@@ -33,7 +33,7 @@
 ++++ state
 ++++ <font color=green>calls
 '+++++ [sequenceNumber]
-
+.
 }
 }
 
