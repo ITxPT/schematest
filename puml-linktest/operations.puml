@@ -1,30 +1,16 @@
 @startsalt (id=operations)
-
-' Login and merged topics based or related to TOBS Onboard MQTT RM02v0.3.12_ITxPT
+{
+{T
+' operations related topics
 ' Status: workdoc, version 0.1
 ' the first topic level (+) is assigned to the ITxPT root topic
 '.
 ' Operational Information Topics
 ++ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
-'+++ vehicle
-'++++ unique_identifier
-'++++ assigned_identifier
-+++ **login** | LOGIN function
-++++ vehicle | VEHICLE LOGIN
-+++++ composition
-+++++ status | current status of technical vehicle login
 
-++++ user | USER LOGIN (driver or others)
-+++++ status | current status of driver login
-+++++ cmd | top level for driver login request/response messages
-++++++ [provider name] | login/out requests, publish shall include response topic (aka mqttv5)
-+++++++ response | personal response to the requester
-
-++++ assignment | DUTY LOGIN
-+++++ status | current status of assignment login
-+++++ cmd | top level for assignment login request/response messages
-++++++ [provider name] | login/out requests, publish shall include response topic (aka mqttv5)
-+++++++ response | personal response to the requester
+'logon
+'raw link from github
+!include https://raw.githubusercontent.com/ITxPT/schematest/main/puml-linktest/logon_mqtt-topics.puml!logon
 
 ' Current Operations Topics
 +++ current_block
