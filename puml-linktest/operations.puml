@@ -7,11 +7,12 @@
 '.
 ' Operational Information Topics
 ++ <font color=red>operations | <font color=black>TOP LEVEL FOR FUNCTION "OPERATIONS"
-
+}
 'logon
 'raw link from github
 !include https://raw.githubusercontent.com/ITxPT/schematest/main/puml-linktest/logon_mqtt-topics.puml!logon
 
+{T
 ' Current Operations Topics
 +++ current_block
 ++++ state
