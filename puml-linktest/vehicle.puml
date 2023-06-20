@@ -1,0 +1,54 @@
+startsalt (id=vehicle)
+Title MQTT topics for vehicle data
+scale 2
+skinparam backgroundColor white
+' Status: workdoc, version 0.3
+{
+{T
+'+**topic** | **payload** | **retain** | **QoS** | **msg exp**
+'+ **[itxpt_root_topic]**
+
+
+++ vehicle | VEHICLE INFORMATION
+++++ **id** | VEHICLE GLOBALLY UNIQUE ID's
++++++ [origin] | from where..
+++++++ [vehicle_id_type] | VEHICLE ID | true | 1 | ?
+++++ **alias** | assigned vehicle ALIASes
++++++ [origin] | from where..
+++++++ [vehicle_type_type] | assigned REFERENCE | true | 1 | ?
+
++++ **info**
+++++ general | general information about the vehicle | true | 0 |?
+++++ vehicle_mode | type of vehicle | true | 1 | ?
+++++ passenger_capacity | total passenger capacity | true | 1 | ?
+
++++ **odometer** | Odometer reporting
+++++ status | overall status of odometer | true | 1 | ?
+++++ driver | driver information | true | 1 | ?
+++++ speed | current speed | false | 0 | ?
+++++ distance | distance since start | false | 0 | ?
+++++ total_distance | total distance | true | 1 | ?
+
++++ **entrances**
+++++ info | list and description of entrances | true | 1 | ?
+++++ status | consolidated entrance status | true | 0 | ?
+++++ report | entrance reports
+++++++ [entrance_name] | individual entrance report
++++++++ status | true | 0 | ?
++++++++ state | Is the entrance in use (enabled/disabled) | true | 0 | ?
+
++++ **state**
+++++ info | announce here supported state's | true | 0 | ?
+++++ low_voltage | typically a 24V system
++++++ its_mode | The vehicles opinion of current its-mode (eco0,eco1..) | true | 0 | ?
++++++ low_batt | exact representation of the signal "low-batt"  | true | 0 | ?
++++++ full_power | exact representation of the signal "full power available"  | true | 0 | ?
++++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
++++++ high_voltage | electrical system for propulsion
++++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
+
+
+
+}
+}
+@endsalt
