@@ -1,7 +1,5 @@
 startsalt (id=vehicle)
-Title MQTT topics for vehicle data
-scale 2
-skinparam backgroundColor white
+
 ' Status: workdoc, version 0.3
 {
 {T
