@@ -1,0 +1,27 @@
+@startsalt (id=logon)
+
+' Logon topics
+' Status: workdoc, version 0.1
+' the first topic level (+) is assigned to the ITxPT root topic
+' the second topic level (++) that is the parent of logon is "operations"
+' eg. the mounting point for this document is: [ITxPT root topic]/operations/..
+'.
++++ **logon** | LOGON / LOGOFF function
+++++ vehicle | VEHICLE LOGON
++++++ composition
++++++ status | current status of technical vehicle logon
+
+++++ user | USER LOGON (driver or others)
++++++ status | current status of user/driver logon
++++++ cmd | top level for user logon request/response messages
+++++++ [provider name] | logon/off requests, publish shall include pointer to response topic (aka mqttv5)
++++++++ response | personal response to the requester
+
+++++ assignment | DUTY LOGON
++++++ status | current status of assignment logon
++++++ cmd | top level for assignment logon request/response messages
+++++++ [provider name] | logon/off requests, publish shall include pointer to response topic (aka mqttv5)
++++++++ response | personal response to the requester
+
+
+@endsalt
