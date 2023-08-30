@@ -5,14 +5,14 @@
 	"description": "ITxPT schema for Global Unique Identifier for any vehicle mode",
 	"type": "object",
 	"required": [
-	    	"$schema",
+	    	"schema-link",
 		"version",
 		"atDateTime",
 		"origin",
 		"identifier"
 	],
 	"properties": {
-		"$schema": {
+		"schema-link": {
 			"type": "string"
 		},
 		"$id":{
