@@ -1,4 +1,4 @@
-@startsalt
+@startsalt (id=inventory)
 ' title MQTT topic for inventory
 ' Inventory base topic structure, to be linked into main document
 ' Status: workdoc, version 0.5
