@@ -4,6 +4,7 @@
 '{
 '{T
 ' test crap
+!startsub CRAP
 'header extra crap
 ++ crap | TOP LEVEL TOPIC FOR INVENTORY
 +++ **connections** | MQTT CONNECTION INVENTORY
@@ -20,14 +21,16 @@
 +++++ heartbeat | APPLICATION HEARTBEAT
 ++++++ relative | RELATIVE APPLICATION HEARTBEAT | true | 0 | ?
 ++++++ absolute | ABSOLUTE APPLICATION HEARTBEAT | true | 0 | ?
+!endsub
 
+!startsub MORE-CRAP
 +++ **module**
 ++++ [mdns_name] | THE ANNOUNCED mDNS/DNS-SD NAME
 +++++ info | JSON REPRESENTATION OF TxT KEYS | true | 0 | ?
 +++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
 +++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
 +++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
-
+!endsub
 
 '}
 '}
