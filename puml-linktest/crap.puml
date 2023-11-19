@@ -23,7 +23,7 @@
 ++++++ absolute | ABSOLUTE APPLICATION HEARTBEAT | true | 0 | ?
 !endsub
 
-!startsub MORE-CRAP
+!startsub MORECRAP
 +++ **module**
 ++++ [mdns_name] | THE ANNOUNCED mDNS/DNS-SD NAME
 +++++ info | JSON REPRESENTATION OF TxT KEYS | true | 0 | ?
