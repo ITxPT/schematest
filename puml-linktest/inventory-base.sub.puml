@@ -1,0 +1,100 @@
+@startsalt
+' title MQTT topic for inventory
+' Inventory base topic structure, to be linked into main document
+' Status: workdoc, version 0.5
+' the first topic level (+) is assigned to the ITxPT root topic
+
+{
+{T
+header Proposal topic view of the inventory related topics
+.
+**topic** | **payload** | **retain** | **QoS** | **msg exp**
+.
++**[itxpt_root_topic]**
+
+++ <font color=red>**inventory** | <font color=black>TOP LEVEL FOR FUNCTION "INVENTORY"
++++ **configuration**
+' sub for configuration
+!startsub configuration
+++++ cmd
++++++ register
++++++ update
++++++ <config_data_ScUID>
++++++ index
+!endsub
+
++++ **deployment**
+!startsub deployment
+++++ cmd
++++++ register
++++++ update
+++++ data
++++++ <data_type01_ScUID>
++++++ index
+++++ environment
+++++ software
++++++ <software_type01_ScUID>
++++++ index
+!endsub
+
++++ **equipment**
+!startsub equipment
+++++ cmd
++++++ register
++++++ update
+++++ <equipment01_ScUID>
++++++ Info
+++++++ device
+++++++ sw
+++++++ xdecode
+++++ index
+!endsub
+
++++ **providers**
+!startsub providers
+++++ cmd
++++++ register
++++++ update
+++++ index
+++++ <provider01_ScUID>
++++++ sdecode
++++++ topics
+!endsub
+
+
+' main place for generated data
+++ **runtime**
+
+!startsub runtime
++++ <provider01_ScUID>
++++ cmd
++++ outputs
++++ states
+++++ connections
++++++ client_id
++++++ state
++++++ will
+++++ heartbeat
+++++ runstate
+++++ status
++++++ sstatus
++++++ xstatus
+
+'+++ <provicer02_ScUID>
+'+++ cmd
+'+++ outputs
+'+++ states
+'++++ connections
+'+++++ client_id
+'+++++ state
+'+++++ will
+'++++ heartbeat
+'++++ runstate
+'++++ status
+'+++++ sstatus
+'+++++ xstatus
+!endsub
+
+}
+}
+@endsalt
