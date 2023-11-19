@@ -1,10 +1,10 @@
 @startsalt (id=crap)
 'title test crap
 
-{
-{T
+'{
+'{T
 ' test crap
-header extra crap
+'header extra crap
 ++ crap | TOP LEVEL TOPIC FOR INVENTORY
 +++ **connections** | MQTT CONNECTION INVENTORY
 ++++ [client_id] | MQTT CONNECTION CLIENT ID
@@ -29,6 +29,6 @@ header extra crap
 +++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
 
 
-}
-}
+'}
+'}
 @endsalt
