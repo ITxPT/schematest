@@ -23,14 +23,14 @@
 ++++++ absolute | ABSOLUTE APPLICATION HEARTBEAT | true | 0 | ?
 !endsub
 
-!startsub MORECRAP
+
 +++ **module**
 ++++ [mdns_name] | THE ANNOUNCED mDNS/DNS-SD NAME
 +++++ info | JSON REPRESENTATION OF TxT KEYS | true | 0 | ?
 +++++ status | A "nonNegativeInteger" FROM TxT KEY "status" | true | 0 | ?
 +++++ xstatus | JSON REPRESENTATION OF TxT KEY "xstatus" | true | 0 | ?
 +++++ xdecode | JSON REPRESENTATION OF HOW TO DECODE "xstatus" | true | 0 | ?
-!endsub
+
 
 '}
 '}
