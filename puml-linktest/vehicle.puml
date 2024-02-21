@@ -48,11 +48,7 @@ header vehicleMode=BUS
 
 header vehicleMode=TRAIN
 
-'@startsalt vehicle_mqtt-topics
-'Title MQTT topics for vehicle data
-'scale 2
-'skinparam backgroundColor white
-' Status: workdoc, version 0.3
+
 
 ++ vehicle | VEHICLE INFORMATION
 +++ **id** | VEHICLE GLOBALLY UNIQUE ID's
