@@ -1,4 +1,4 @@
-@startsalt (id=vehicle)
+@startsalt (id=vehicle-bus)
 
 ' Status: workdoc, version 0.3
 {
@@ -44,9 +44,20 @@ header vehicleMode=BUS
 +++++ high_voltage | electrical system for propulsion
 +++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
 
+}
+}
+@endsalt
+
+
+
+@startsalt (id=vehicle-train)
+
+' Status: workdoc, version 0.1
+{
+{T
+
+
 header vehicleMode=TRAIN
-
-
 
 ++ vehicle | VEHICLE INFORMATION
 +++ **id** | VEHICLE GLOBALLY UNIQUE ID's
