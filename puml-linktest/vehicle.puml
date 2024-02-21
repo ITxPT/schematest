@@ -7,7 +7,7 @@
 '+ **[itxpt_root_topic]**
 
 header vehicleMode=BUS
-.
+'.
 ++ vehicle | VEHICLE INFORMATION
 ++++ **id** | VEHICLE GLOBALLY UNIQUE ID's
 +++++ [origin] | from where..
@@ -45,6 +45,123 @@ header vehicleMode=BUS
 +++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
 +++++ high_voltage | electrical system for propulsion
 +++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
+
+header vehicleMode=TRAIN
+
+'@startsalt vehicle_mqtt-topics
+'Title MQTT topics for vehicle data
+'scale 2
+'skinparam backgroundColor white
+' Status: workdoc, version 0.3
+
+++ vehicle | VEHICLE INFORMATION
++++ **id** | VEHICLE GLOBALLY UNIQUE ID's
+++++ [origin] | from where..
++++++ [vehicle_id_type] | VEHICLE ID | true | 1 | ?
++++ **alias** | assigned vehicle ALIASes
+++++ [origin] | from where..
++++++ [vehicle_type_type] | assigned REFERENCE | true | 1 | ?
+
++++ **info**
+++++ general | general information about the vehicle | true | 0 |?
+++++ vehicle_mode | type of vehicle | true | 1 | ?
+++++ passenger_capacity | total passenger capacity | true | 1 | ?
+
++++ **odometer** | Odometer reporting
+++++ status | overall status of odometer | true | 1 | ?
+++++ driver | driver information | true | 1 | ?
+++++ speed | current speed | false | 0 | ?
+++++ distance | distance since start | false | 0 | ?
+++++ total_distance | total distance | true | 1 | ?
+
++++ **entrances**
+++++ info | list and description of entrances | true | 1 | ?
+++++ status | consolidated entrance status | true | 0 | ?
+++++ report | entrance reports
+++++++ [entrance_name] | individual entrance report
++++++++ status | true | 0 | ?
++++++++ state | Is the entrance in use (enabled/disabled) | true | 0 | ?
+
++++ **power**
+++++ info | announce here supported information | true | 0 | ?
+
+' First ITS power bank, of the type consumers, there has to be at least one
+++++ [its_bank-1] | Sc-UID of power bank, ex. a 24VDC system
++++++ type | Type of bank, provider of consumer
++++++ policy | policy and rules of behaiviour of the bank
++++++ segments | status of supported power bank segments
+++++++ cmd | generic command structure for control of segments
++++++++ request | incoming requests to power-manager
++++++++ [provider-name] | responces per provider
+
+' Per segment information
+++++++ [segment_name] | name of the power segments
++++++++ state | The current state, ON / OFF / DISABLED / REMOTE-ON
++++++++ load | The current load at the segment(in mA)
++++++++ consumers | name and expected consumption parameters per its-mode
++++++++ current-limit | type (virtual or physical) and value (in mA)
++++++++ message | per segment warnings and alarms
+
+' The generic its power bank information
++++++ voltage | The current voltage supplied, update every minute
++++++ its_mode | The vehicles opinion of current its-mode (eco0,eco1..) | true | 0 | ?
++++++ low_batt | exact representation of the signal "low-batt"  | true | 0 | ?
++++++ full_power | exact representation of the signal "full power available"  | true | 0 | ?
++++++ charging | Is external/internal charger connected, does it charge?  | true | 0 | ?
+
+' Additional power bank's example
+++++ [its_bank-2] | Sc-UID of power bank, ex. a 110VDC system
++++++ type | Type of bank, provider of consumer
++++++ policy | policy and rules of behaiviour of the bank
++++++ segments | status of supported power bank segments
+++++++ cmd | generic command structure for control of segments
++++++++ request | incoming requests to power-manager
++++++++ [provider-name] | responces per provider
+
+' Per segment information
+++++++ [segment_name] | name of the power segments
++++++++ state | The current state, ON / OFF / DISABLED / REMOTE-ON
++++++++ load | The current load at the segment(in mA)
++++++++ consumers | name and expected consumption parameters per its-mode
++++++++ current-limit | type (virtual or physical) and value (in mA)
++++++++ message | per segment warnings and alarms
+
+' The generic its power bank information
++++++ voltage | The current voltage supplied, update every minute
++++++ its_mode | The vehicles opinion of current its-mode (eco0,eco1..) | true | 0 | ?
++++++ low_batt | exact representation of the signal "low-batt"  | true | 0 | ?
++++++ full_power | exact representation of the signal "full power available"  | true | 0 | ?
++++++ charging | Is external/internal charger connected, does it charge?  | true | 0 | ?
+
+
+++++ [high-voltage_bank] | Sc-UID of power bank, ex. electrical system for propulsion
++++++ type | Type of bank, provider of consumer
++++++ policy | policy and rules of behaiviour of the bank
++++++ connected | Has the bank external connection?
++++++ segments | status of supported power bank segments
+++++++ cmd | generic command structure for control of segments
++++++++ request | incoming requests to power-manager
++++++++ [provider-name] | responces per provider
+
+' Per segment information
++++++ [segment_name] | name of the power segments
+++++++++ state | The current state, ON / OFF / DISABLED / REMOTE-ON
++++++++ load | The current load at the segment(in mA)
++++++++ message | per segment warnings and alarms
+
+' Per segment information
++++++ [battery] | name of the power segments
+++++++++ state | The current state, ON / OFF / DISABLED / REMOTE-ON
++++++++ load | The current load at the segment(in mA)
++++++++ soc | state of charge
++++++++ voltage | The current voltage supplied, update every minute
++++++++ charging | Is external charger connected, does it charge?  | true | 0 | ?
+++++++++ ttf | Estimated time to fully charged
++++++++ message | per segment warnings and alarms
+
++++++ voltage | The current bank voltage supplied, update every minute
+
+
 
 
 
